@@ -1,0 +1,82 @@
+section{
+  margin-top: 100px;
+}
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+  width: 100%;
+  position: fixed; /* Keep nav fixed at the top */
+  top: 0;
+  left: 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Add space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* About Me Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px; /* Restrict width of content to center on larger screens */
+  width: 100%; /* Take up full width of smaller screens */
+  margin-top: 100px; /* Add margin to account for fixed navigation */
+}
+
+.about-content {
+  max-width: 60%; /* Controls the width of the text area */
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 35%; /* Controls the width of the picture section */
+}
+
+.profile-pic {
+  width: 200px; /* Make the picture a square */
+  height: 200px;
+  object-fit: cover; /* Ensure the image fits the square without distortion */
+  border-radius: 0; /* Remove rounded corners to keep the square shape */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
